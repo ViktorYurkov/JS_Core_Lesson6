@@ -1,0 +1,24 @@
+function show(data) {
+    console.log(data);
+}
+
+//Завдання 1
+function checkAge(age) { 
+var result = (age > 18)? true: confirm('Do You have permission?'); 
+}
+
+checkAge(11);
+
+function checkAge1(age) { 
+var result = (age > 18)||confirm('Do You have permission?');
+}
+checkAge1(22)
+
+//Завдання 2
+function min(){
+ var mini=arguments[0];
+ for(var i=0; i<arguments.length; i++)
+    if(arguments[i]<mini) mini=arguments[i];
+ return mini;
+}
+show(min(10,20,3,40,11,9,35));
